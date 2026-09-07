@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Configurações locais e ambiente
+.env
+docker-compose.yaml
+src/main/resources/application.yaml
