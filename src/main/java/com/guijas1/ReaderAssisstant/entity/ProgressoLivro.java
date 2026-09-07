@@ -49,7 +49,6 @@ public class ProgressoLivro {
     private LocalDateTime atualizadoEm;
 
     @PrePersist
-    @PreUpdate
     private void atualizarData(){
         atualizadoEm = LocalDateTime.now();
     }

@@ -3,9 +3,9 @@ spring:
     name: ReaderAssisstant
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/reader_assistant
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:${DB_PORT:5432}/reader_assistant
+    username: ${POSTGRES_USER:guijas1}
+    password: ${POSTGRES_PASSWORD:3437}
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true
